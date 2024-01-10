@@ -1,21 +1,66 @@
-.container{
-    width: 450px;
-    height: 330px;
-}
-input{
-    width: 100%;
-}
-
-.container > div{
-    display: flex;
-    width: 200px;
-    height: 55px;
+.container {
+    width: 320px;
     margin: auto;
-    background-color: pink;
-    justify-content: center;
 }
 
-button{
+input {
+    width: 100%;
+    border-radius: 5px;
+    color: black;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.container > div.screen {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    background-color: gray;
+    border-color: 2px black;
+}
+
+.container > div {
+    display: flex;
+    width: 300px;
+    height: 75px;
+    margin: auto;
+}
+
+button {
     width: 100%;
     height: 100%;
+    border-radius: 5px;
 }
+
+.row5:first-child {
+    background-color: pink;
+}
+
+button[data-operator="delete"] {
+    background-color: skyblue;
+    color: white; /* Text color for "Delete" button */
+}
+
+button[data-operator="clear"] {
+    background-color: lightcoral;
+    color: white; /* Text color for "Clear" button */
+}
+
+button[data-number] {
+    background-color: lightblue;
+}
+
+button[data-operator="subtract"],
+button[data-operator="multiply"],
+button[data-operator="divide"],
+button[data-operator="add"],
+button[data-operator="equals"] {
+    background-color: rgba(255, 68, 0, 0.836);
+}
+
+/* Specific style for buttons with class .row5 
+button.row5 {
+    background-color: Your desired color for .row5 ;
+    color: Your desired text color for .row5 ;
+}
+*/
